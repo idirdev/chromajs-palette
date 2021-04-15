@@ -1,0 +1,20 @@
+{
+  "name": "@idirdev/chromajs-palette",
+  "version": "1.0.0",
+  "description": "Color palette generator with accessibility checking and harmony rules",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": ["color", "palette", "accessibility", "wcag", "harmony", "design"],
+  "author": "idirdev",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
