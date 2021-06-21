@@ -1,5 +1,7 @@
 # 🎨 ChromaJS Palette
 
+> Lab project — color palette exploration and accessibility contrast analysis.
+
 A zero-dependency color palette generator for TypeScript. Parse and manipulate colors, generate harmonious palettes, and check WCAG accessibility compliance.
 
 ## Installation
