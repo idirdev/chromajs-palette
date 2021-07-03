@@ -101,3 +101,26 @@ console.log(fg);                          // accessible variant of teal on dark 
 ## License
 
 MIT
+
+---
+
+## Français
+
+**ChromaJS Palette** est une bibliothèque TypeScript sans dépendance pour la génération de palettes de couleurs et l'analyse d'accessibilité. Elle permet d'analyser et de manipuler des couleurs, de générer des palettes harmonieuses (monochromatique, analogique, complémentaire, triadique, etc.) et de vérifier la conformité WCAG pour l'accessibilité des contrastes.
+
+### Installation
+
+```bash
+npm install @idirdev/chromajs-palette
+```
+
+### Utilisation
+
+```typescript
+import { Color, generatePalette, checkContrast } from '@idirdev/chromajs-palette';
+
+const couleur = Color.fromHex('#2DD4A8');
+const palette = generatePalette('#2DD4A8', 'triadic');
+const contraste = checkContrast('#2DD4A8', '#1a1a2e');
+console.log(contraste.AA.normal); // true/false pour le texte normal AA
+```
