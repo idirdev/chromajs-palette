@@ -110,9 +110,9 @@ export function hslToRgb(hsl: HSL): RGB {
   const p = 2 * l - q;
 
   return {
-    r: Math.round(hue2rgb(p, q, h + 1 / 3) * 255),
-    g: Math.round(hue2rgb(p, q, h) * 255),
-    b: Math.round(hue2rgb(p, q, h - 1 / 3) * 255),
+    r: Math.floor(hue2rgb(p, q, h + 1 / 3) * 255),
+    g: Math.floor(hue2rgb(p, q, h) * 255),
+    b: Math.floor(hue2rgb(p, q, h - 1 / 3) * 255),
   };
 }
 
