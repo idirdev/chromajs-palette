@@ -124,3 +124,4 @@ const palette = generatePalette('#2DD4A8', 'triadic');
 const contraste = checkContrast('#2DD4A8', '#1a1a2e');
 console.log(contraste.AA.normal); // true/false pour le texte normal AA
 ```
+
